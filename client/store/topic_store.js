@@ -47,6 +47,13 @@ class TopicStore {
         this.topics = topics.map(topic => new Topic(createTopic(topic)))
     }
 
+    toJson(){
+        return{
+            syncing:this.syncing,
+            topics:this.topics
+        }
+    }
+
     // 然后定义获取数据的方法，因为所有的数据加工都需要我们通过mobx来操作，这样才能很好的把握数据流，来保证有据可循
     // 首先定义一个方法，然后把我们定义好的get请求导入进来
     @action fetchTopics(url){
