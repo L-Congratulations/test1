@@ -16,9 +16,9 @@
     "deploy":{
         "production":{
             "user":"root",
-            "host":"www.luckoi.cn",
+            "host":"106.13.3.220",
             "ref":"origin/master",
-            "repo":"https://github.com/L-Congratulations/test.git",
+            "repo":"https://github.com/L-Congratulations/test1.git",
             "path":"/root/dawn/test",
             "ssh_options": "StrictHostKeyChecking=no",
             "pre-deploy":"git fetch --all",

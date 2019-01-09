@@ -1,7 +1,8 @@
 const axios = require('axios')
 const queryString = require('query-string')
 
-const baseUrl = 'http://rap2api.taobao.org/app/mock/119140/api'
+// const baseUrl = 'http://rap2api.taobao.org/app/mock/119140/api'
+const baseUrl = 'https://cnodejs.org/api/v1'
 
 module.exports = (req,res,next)=>{
     const path = req.path
